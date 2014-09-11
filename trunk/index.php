@@ -1,8 +1,25 @@
 <?php
-
-// PHP eerst
+/**
+ * PHP eerst
+ * PHP wordt op de server uitgevoerd (server side)
+ * HTML is wat de browser laat zien (client side)
+ */
 
 // Directory /var/www/bootstrap/trunk
+
+
+// is er POST data (gepost via formulier)
+if (!empty($_POST)) {
+	// yup
+	// html string uitprinten om de data duidelijk te laten zien
+	echo '<pre>';
+	// Wat voor data krijgen we en hoe ziet het eruit?
+	var_dump($_POST);
+	// voor nu even stoppen met de uitvoer van het script
+	die;
+} else {
+	// nope
+}
 
 
 ?><!DOCTYPE html>
@@ -34,10 +51,10 @@
 
     <div class="container">
 
-      <form class="form-signin" role="form">
+      <form class="form-signin" role="form" method="post" action="#">
         <h2 class="form-signin-heading">Please sign in</h2>
-        <input type="email" class="form-control" placeholder="Email address" required autofocus>
-        <input type="password" class="form-control" placeholder="Password" required>
+        <input type="text" name="username" class="form-control" placeholder="Username" required autofocus>
+        <input type="password" name="password" class="form-control" placeholder="Password" required>
         <label class="checkbox">
           <input type="checkbox" value="remember-me"> Remember me
         </label>
