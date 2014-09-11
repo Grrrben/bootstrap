@@ -2,4 +2,4 @@
 .settings/
 .project
 .buildpath
-inc/db_settings.php
+trunk/inc/db_settings.php
