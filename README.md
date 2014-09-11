@@ -34,6 +34,7 @@ git commit -a
 
 // add message
 
+git push
 
 
 If you want remove all local changes from your working copy, simply stash them:
@@ -45,6 +46,5 @@ git stash drop
 
 
 
-git push
 
 
