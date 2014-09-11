@@ -1,5 +1,5 @@
 <?php
 // dit mag natuurlijk nooit in een public repo komen.
-$username 	= "user";
+$username 	= "root";
 $password 	= "pass";
 $dbname 	= "name";
