@@ -7,28 +7,6 @@
 
 // Directory /var/www/bootstrap/trunk
 
-/**
- * eerst zorgen dat we alle benodigde bestanden hebben
- * Niet alles hoeft in een file te staan, dus we includen
- */
-
-require_once('inc/setup.php');
-
-
-
-// is er POST data (gepost via formulier)
-if (!empty($_POST)) {
-	// yup
-	// html string uitprinten om de data duidelijk te laten zien
-	echo '<pre>';
-	// Wat voor data krijgen we en hoe ziet het eruit?
-	var_dump($_POST);
-	// voor nu even stoppen met de uitvoer van het script
-	die("\r\nEn we stoppen hier");
-} else {
-	// nope
-}
-
 
 ?><!DOCTYPE html>
 <html lang="en">
@@ -59,15 +37,7 @@ if (!empty($_POST)) {
 
     <div class="container">
 
-      <form class="form-signin" role="form" method="post" action="#">
-        <h2 class="form-signin-heading">Please sign in</h2>
-        <input type="text" name="username" class="form-control" placeholder="Username" required autofocus>
-        <input type="password" name="password" class="form-control" placeholder="Password" required>
-        <label class="checkbox">
-          <input type="checkbox" value="remember-me"> Remember me
-        </label>
-        <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
-      </form>
+      <p>container</p>
 
     </div> <!-- /container -->
 
