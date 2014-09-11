@@ -30,20 +30,6 @@ if (!empty($_POST)) {
 }
 
 
-// is er POST data (gepost via formulier)
-if (!empty($_POST)) {
-	// yup
-	// html string uitprinten om de data duidelijk te laten zien
-	echo '<pre>';
-	// Wat voor data krijgen we en hoe ziet het eruit?
-	var_dump($_POST);
-	// voor nu even stoppen met de uitvoer van het script
-	die;
-} else {
-	// nope
-}
-
-
 ?><!DOCTYPE html>
 <html lang="en">
   <head>
