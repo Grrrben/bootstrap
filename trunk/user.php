@@ -10,6 +10,8 @@
 $varName = "dit is php"; // string
 $number = 123;
 $b = 2;
+$user = "Danny";
+$iq = 3;
 
 $dieAntwoord =  $number * $b;
 
@@ -20,6 +22,14 @@ $boodschappen = array($number, $b, $dieAntwoord, $varName, "tomaat", "sla", "kaa
 //echo $boodschappen[0] . '<br>';
 //echo $boodschappen[1];
 //echo $boodschappen[2];
+
+if ($iq < 100 ) {
+    echo "$user is fokking DOM!"; 
+} else {
+    echo "Er klopt iets";     
+}
+
+die();
 
 //if ($b > 100 || $b == 2 ) {
 //    echo "klopt";
