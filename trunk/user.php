@@ -23,8 +23,8 @@ $boodschappen = array($number, $b, $dieAntwoord, $varName, "tomaat", "sla", "kaa
 //echo $boodschappen[1];
 //echo $boodschappen[2];
 
-if ($iq < 100 ) {
-    echo "$user is fokking DOM!"; 
+if ($iq < 10 ) {
+    echo "$user is fokking DOM! Zijn IQ is $iq"; 
 } else {
     echo "Er klopt iets";     
 }
