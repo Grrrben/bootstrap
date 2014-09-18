@@ -14,3 +14,5 @@ CREATE TABLE IF NOT EXISTS `users` (
   `password` varchar(255) NOT NULL COMMENT 'pass, string, max. 255 chars',
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
+
+INSERT INTO `zuidoost02_bootstrap`.`users` (`id`, `username`, `password`) VALUES (NULL, 'danny', 'boy');

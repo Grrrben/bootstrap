@@ -10,7 +10,7 @@
 $varName = "dit is php"; // string
 $number = 123;
 $b = 2;
-$user = "Danny";
+$user = $_GET['username'];
 $iq = 3;
 
 $dieAntwoord =  $number * $b;

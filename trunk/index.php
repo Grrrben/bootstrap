@@ -14,17 +14,39 @@
 
 require_once('inc/setup.php');
 
-
+$errors = array();
 
 // is er POST data (gepost via formulier)
 if (!empty($_POST)) {
+    
+    
+    // even kijken of we alles hebben
+    
+    if (!empty($_POST['username'])){
+        $username = $_POST['username'];
+    } else {
+        $errors[] = "Geen username";
+    }
+    
+    if (!empty($_POST['password'])){
+        $password = $_POST['password'];
+    } else {
+        $errors[] = "Geen wachtwoord";
+    }
+    
+    if (!count($errors)) {
+        // er zijn geen errors (count geeft 0 terug)
+        header("Location: user.php?username=" . $username);
+    }
+    
+    
 	// yup
 	// html string uitprinten om de data duidelijk te laten zien
-	echo '<pre>';
+	//echo '<pre>';
 	// Wat voor data krijgen we en hoe ziet het eruit?
-	var_dump($_POST);
+	//var_dump($_POST);
 	// voor nu even stoppen met de uitvoer van het script
-	die("\r\nEn we stoppen hier");
+	//die("\r\nEn we stoppen hier");
 } else {
 	// nope
 }
@@ -42,6 +64,7 @@ if (!empty($_POST)) {
     <link rel="icon" href="/favicon.ico">
 
     <title>Test server</title>
+    
 
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -59,11 +82,21 @@ if (!empty($_POST)) {
   <body>
 
     <div class="container">
+        
+        <?php
+        
+        foreach ($errors as $error){
+            echo $error . '<br>';
+        }
+    
+        
+        
+        ?>
 
       <form class="form-signin" role="form" method="post" action="#">
         <h2 class="form-signin-heading">Please sign in</h2>
-        <input type="text" name="username" class="form-control" placeholder="Username" required autofocus>
-        <input type="password" name="password" class="form-control" placeholder="Password" required>
+        <input type="text" name="username" class="form-control" placeholder="Username" autofocus>
+        <input type="password" name="password" class="form-control" placeholder="Password">
         <label class="checkbox">
           <input type="checkbox" value="remember-me"> Remember me
         </label>
