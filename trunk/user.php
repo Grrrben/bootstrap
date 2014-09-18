@@ -7,6 +7,54 @@
 
 // Directory /var/www/bootstrap/trunk
 
+$varName = "dit is php"; // string
+$number = 123;
+$b = 2;
+
+$dieAntwoord =  $number * $b;
+
+// array
+
+$boodschappen = array($number, $b, $dieAntwoord, $varName);
+
+//echo $boodschappen[0] . '<br>';
+//echo $boodschappen[1];
+//echo $boodschappen[2];
+
+//if ($b > 100 || $b == 2 ) {
+//    echo "klopt";
+//} elseif (($b * 2) == 4) {
+//    echo 'a';
+//} elseif ($b == 2) {
+//    echo '2';
+//} else {
+//    echo "klopt niet";
+//}
+
+// echo $boodschappen;
+//echo strlen($varName);
+
+
+//foreach ($boodschappen as $boodschap) {
+//    
+//    echo $boodschap . '<br>';
+//    
+//}
+
+echo count($varName) . '<br>';
+
+if (empty($varNaam)){
+    echo 'JA';
+}
+
+die('<br>-');
+
+
+
+
+
+
+
 
 ?><!DOCTYPE html>
 <html lang="en">
@@ -18,7 +66,7 @@
     <meta name="author" content="">
     <link rel="icon" href="/favicon.ico">
 
-    <title>Signin Template for Bootstrap</title>
+    <title>Title</title>
 
     <!-- Bootstrap core CSS -->
     <link href="/css/bootstrap.min.css" rel="stylesheet">
@@ -37,7 +85,7 @@
 
     <div class="container">
 
-      <p>container</p>
+      <p><?php echo $dieAntwoord; ?></p>
 
     </div> <!-- /container -->
 

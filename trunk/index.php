@@ -1,4 +1,4 @@
-<?php
+<?php 
 /**
  * PHP eerst
  * PHP wordt op de server uitgevoerd (server side)
