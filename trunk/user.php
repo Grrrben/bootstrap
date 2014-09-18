@@ -15,7 +15,7 @@ $dieAntwoord =  $number * $b;
 
 // array
 
-$boodschappen = array($number, $b, $dieAntwoord, $varName);
+$boodschappen = array($number, $b, $dieAntwoord, $varName, "tomaat", "sla", "kaas");
 
 //echo $boodschappen[0] . '<br>';
 //echo $boodschappen[1];
