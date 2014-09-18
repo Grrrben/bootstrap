@@ -3,4 +3,4 @@
 .project
 .buildpath
 trunk/inc/db_settings.php
-/nbproject/private/
+.nbproject/
